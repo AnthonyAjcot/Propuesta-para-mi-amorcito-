@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Propuesta para Sofía ❤️</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ffd6e7,#fff7fb);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.card{
+width:90%;
+max-width:700px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+text-align:center;
+animation:aparecer 1s;
+}
+
+h1{
+color:#ff4f81;
+}
+
+.progress{
+width:100%;
+height:22px;
+background:#eee;
+border-radius:20px;
+overflow:hidden;
+margin:20px 0;
+}
+
+.bar{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#ff4f81,#ff7eb3);
+transition:.1s;
+}
+
+#porcentaje{
+font-weight:bold;
+color:#ff4f81;
+}
+
+#contenido{
+display:none;
+text-align:left;
+margin-top:20px;
+line-height:1.8;
+animation:aparecer 1s;
+}
+
+.info{
+background:#fff0f5;
+padding:15px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.final{
+text-align:center;
+font-size:20px;
+margin-top:30px;
+color:#ff4f81;
+font-weight:bold;
+}
+
+.chat{
+margin-top:20px;
+background:#ff4f81;
+color:white;
+padding:15px;
+border-radius:12px;
+text-align:center;
+font-weight:bold;
+}
+
+@keyframes aparecer{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💖 Propuesta para Sofía 💖</h1>
+
+<p id="estado">Preparando una sorpresa...</p>
+
+<div class="progress">
+<div class="bar" id="bar"></div>
+</div>
+
+<p id="porcentaje">0%</p>
+
+<div id="contenido">
+
+<div class="info">
+
+<h2>📍 Datos de la cita</h2>
+
+<b>Participantes</b><br>
+Anthony ❤️ Sofía
+
+<br><br>
+
+<b>Destino</b><br>
+🦁 Zoológico La Aurora
+
+<br><br>
+
+<b>Fecha</b><br>
+Sábado 27 de junio de 2026
+
+<br><br>
+
+<b>Hora</b><br>
+9:00 A.M.
+
+</div>
+
+<p>
+
+Hay una persona con la que cualquier plan se vuelve especial... y esa persona eres tú.
+
+<br><br>
+
+Me encantaría invitarte mañana a una cita. Estuve pensando en un lugar que siento que podríamos disfrutar mucho juntos, y me gustaría que fuéramos al zoológico.
+
+Creo que sería muy bonito recorrerlo contigo, ver a los animalitos, tomarnos muchas fotos, reírnos y simplemente pasar un día tranquilo a tu lado.
+
+<br><br>
+
+No quiero que esta invitación te haga sentir comprometida ni que tengas que cambiar tus planes por mí.
+
+Si mañana al final no se puede o ya tienes algo organizado, de verdad lo voy a entender y no pasa absolutamente nada.
+
+Lo importante para mí era hacerte saber que me hace muchísima ilusión compartir un día así contigo.
+
+<br><br>
+
+Pero si puedes...
+
+Me haría muy feliz que aceptaras esta invitación y que mañana vivamos una aventura más juntos. ❤️
+
+</p>
+
+<div class="final">
+
+¿Me regalarías el privilegio de tener una cita contigo e ir al zoológico conmigo mañana? 🦁🤍
+
+</div>
+
+<div class="chat">
+
+💕 Si aceptas (o quieres responderme), solo adjunta tu respuesta en nuestro chat. 💕
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let barra=document.getElementById("bar");
+let porcentaje=document.getElementById("porcentaje");
+let estado=document.getElementById("estado");
+
+let i=0;
+
+let carga=setInterval(function(){
+
+i++;
+
+barra.style.width=i+"%";
+porcentaje.innerHTML=i+"%";
+
+if(i==99){
+estado.innerHTML="💖 Esperando la respuesta más importante...";
+clearInterval(carga);
+
+setTimeout(function(){
+
+barra.style.width="100%";
+porcentaje.innerHTML="100%";
+estado.innerHTML="✅ Propuesta cargada correctamente.";
+
+document.getElementById("contenido").style.display="block";
+
+},2000);
+
+}
+
+},35);
+
+</script>
+
+</body>
+</html>
