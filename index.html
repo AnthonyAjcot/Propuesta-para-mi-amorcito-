@@ -8,92 +8,133 @@
 
 <style>
 
-body{
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
 background:linear-gradient(135deg,#ffd6e7,#fff7fb);
 display:flex;
 justify-content:center;
 align-items:center;
 min-height:100vh;
+padding:20px;
+overflow-x:hidden;
 }
 
 .card{
-width:90%;
+width:100%;
 max-width:700px;
 background:white;
 padding:30px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-text-align:center;
-animation:aparecer 1s;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+animation:aparecer 1s ease;
 }
 
 h1{
+text-align:center;
 color:#ff4f81;
+margin-bottom:10px;
+}
+
+#estado{
+text-align:center;
+color:#666;
+margin-bottom:15px;
 }
 
 .progress{
 width:100%;
 height:22px;
-background:#eee;
-border-radius:20px;
+background:#ececec;
+border-radius:50px;
 overflow:hidden;
-margin:20px 0;
 }
 
 .bar{
 height:100%;
 width:0%;
-background:linear-gradient(90deg,#ff4f81,#ff7eb3);
-transition:.1s;
+background:linear-gradient(90deg,#ff4f81,#ff8fb6);
+transition:.08s;
 }
 
 #porcentaje{
+text-align:center;
+margin-top:10px;
 font-weight:bold;
 color:#ff4f81;
+font-size:18px;
 }
 
 #contenido{
 display:none;
-text-align:left;
-margin-top:20px;
-line-height:1.8;
+margin-top:30px;
 animation:aparecer 1s;
+line-height:1.8;
 }
 
 .info{
 background:#fff0f5;
-padding:15px;
-border-radius:15px;
-margin-bottom:20px;
+padding:20px;
+border-radius:18px;
+margin-bottom:25px;
+}
+
+.info h2{
+text-align:center;
+color:#ff4f81;
+margin-bottom:15px;
+}
+
+.info b{
+color:#ff4f81;
+}
+
+p{
+font-size:18px;
+color:#444;
+text-align:justify;
 }
 
 .final{
-text-align:center;
-font-size:20px;
 margin-top:30px;
-color:#ff4f81;
+text-align:center;
+font-size:24px;
 font-weight:bold;
+color:#ff4f81;
 }
 
 .chat{
-margin-top:20px;
+margin-top:30px;
 background:#ff4f81;
 color:white;
-padding:15px;
-border-radius:12px;
+padding:18px;
+border-radius:15px;
 text-align:center;
+font-size:18px;
 font-weight:bold;
 }
 
 @keyframes aparecer{
-from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
+
+from{
+opacity:0;
+transform:translateY(25px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
@@ -102,7 +143,7 @@ to{opacity:1;transform:translateY(0);}
 
 <h1>💖 Propuesta para Sofía 💖</h1>
 
-<p id="estado">Preparando una sorpresa...</p>
+<p id="estado">Preparando una sorpresa muy especial...</p>
 
 <div class="progress">
 <div class="bar" id="bar"></div>
@@ -127,50 +168,46 @@ Anthony ❤️ Sofía
 <br><br>
 
 <b>Fecha</b><br>
-Sábado 27 de junio de 2026
+Sabado 4 o Domingo 5 de julio de 2026 
 
 <br><br>
 
-<b>Hora</b><br>
+<b>Hora sugerida</b><br>
 9:00 A.M.
 
 </div>
 
 <p>
 
-Hay una persona con la que cualquier plan se vuelve especial y esa persona eres tú mi amor 
+Desde hace unos días he estado imaginando un plan que me encantaría vivir contigo jiji
 
 <br><br>
 
-Me encantaría invitarte mañana a una cita y estuve pensando en un lugar que siento que podríamos disfrutar mucho juntos, y me gustaría que fuéramos al zoologico siuuu.
-
-Creo que sería muy bonito recorrerlo contigo, ver a los animalitos, tomarnos muchas fotos, reírnos y simplemente pasar un día tranquilo a tu lado princesa
+Tener una cita diferente e ir al zoológico, recorramos cada rincón, conozcamos a todos los animalitos, nos tomemos muchísimas fotos, riamos, conversemos y disfrutemos de un día bonito juntos mi amor, porque cualquier momento contigo tiene el poder de convertirse en uno de mis recuerdos favoritos
 
 <br><br>
 
-No quiero que esta invitación te haga sentir comprometida ni que tengas que cambiar tus planes por mí
-
-Si mañana al final no se puede o ya tienes algo organizado, de verdad lo voy a entender y no pasa absolutamente nada
-
-Lo importante para mí era hacerte saber que me hace muchísima ilusión compartir un día así contigo
+Me hace mucha ilusión pensar en esta aventura y quería hacerte esta invitación desde ahora porque no quería dejar pasar la oportunidad de decirte cuánto deseo compartir ese día contigo
 
 <br><br>
 
-Pero si puedes
-
-Me haría muy feliz que aceptaras esta invitación y que mañana vivamos una aventura más junto
+Espero de corazón que nuestros tiempos coincidan y podamos hacer realidad este pequeño plan princesa
 
 </p>
 
 <div class="final">
 
-¿Me regalarías el privilegio de tener una cita contigo e ir al zoológico conmigo mañana? 🦁
+Una última preguntita 
+
+<br><br>
+
+¿Me regalarías el privilegio de tener una cita contigo e ir al zoológico conmigo? 🦁🤍
 
 </div>
 
 <div class="chat">
 
-💕 Si aceptas adjunta tu respuesta en nuestro chat jiji
+ Si tu respuesta es un sí solo envíamela en nuestro chat jiji
 
 </div>
 
@@ -191,19 +228,25 @@ let carga=setInterval(function(){
 i++;
 
 barra.style.width=i+"%";
+
 porcentaje.innerHTML=i+"%";
 
 if(i==99){
+
 estado.innerHTML="💖 Esperando la respuesta más importante...";
+
 clearInterval(carga);
 
 setTimeout(function(){
 
 barra.style.width="100%";
+
 porcentaje.innerHTML="100%";
+
 estado.innerHTML="✅ Propuesta cargada correctamente.";
 
 document.getElementById("contenido").style.display="block";
+  };
 
 },2000);
 
